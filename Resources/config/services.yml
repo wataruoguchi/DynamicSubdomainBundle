@@ -1,0 +1,7 @@
+services:
+  wataru_dynamic_subdomain.subdomain_listener:
+    class: Wataru\DynamicSubdomainBundle\EventListener\SubdomainListener
+    arguments:
+      base_domain: %wataru_dynamic_subdomain.base_domain%
+    tags:
+      - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }

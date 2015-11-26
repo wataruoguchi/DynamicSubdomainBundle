@@ -1,0 +1,2 @@
+parameters:
+  wataru_dynamic_subdomain.base_domain: localhost
